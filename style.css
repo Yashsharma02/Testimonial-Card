@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eef2f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Card Styling */
+.testimonial-card {
+  background-color: #fff;
+  border: 2px solid #007BFF;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Header: Avatar + Info */
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+/* Avatar Image */
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 3px solid #007BFF;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+/* Customer Info */
+.customer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.customer-title {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Testimonial Text */
+.card-body {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .testimonial-card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .customer-name {
+    font-size: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
